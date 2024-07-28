@@ -55,7 +55,7 @@ export default function Home() {
             className={`flex flex-row p-4 rounded-md cursor-pointer justify-center items-center gap-4 text-[#9dadb1] px-20 shadow-lg`}
           >
             <a
-              href="https://www.instagram.com/kertaaji_v/?igsh=MW00dWM0dHk1aHRv"
+              href="https://www.instagram.com/kliransepuluh?igsh=MXc3M2sxY2x3ZGdiag=="
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
@@ -63,7 +63,7 @@ export default function Home() {
               <FaInstagram size={30} />
             </a>
             <a
-              href=" https://wa.me/+6289672530402"
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
@@ -71,7 +71,7 @@ export default function Home() {
               <FaWhatsapp size={30} />
             </a>
             <a
-              href="mailto:karangtarunakertaaji5@gmail.com"
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
@@ -79,7 +79,7 @@ export default function Home() {
               <FaEnvelope size={30} />
             </a>
             <a
-              href="https://www.tiktok.com/@karangtarunakertaaji?_t=8oJL5ilx7pp&_r=1"
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
