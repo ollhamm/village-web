@@ -280,7 +280,7 @@ export default function Home() {
           >
             <div className="text-start md:text-left">
               <div className="font-semibold items-start justify-center text-center text-xl mb-3">
-                Desa Kliran X RT 04 / RW 23 Sendangagung, Minggir, Sleman,
+                Dusun Kliran X RT 04 / RW 23 Sendangagung, Minggir, Sleman,
                 Yogyakarta
               </div>
               <div className="mb-2">
