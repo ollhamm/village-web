@@ -1,11 +1,22 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { FaBell } from "react-icons/fa";
+import Spinner from "../Spiner";
 
 const Navbar = () => {
   const router = useRouter();
+  const [loading, setLoading] = useState(false);
+
+  const handleIconClick = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      router.push("/events");
+    }, 1000);
+  };
+
   return (
     <div className="w-full flex flex-row items-center justify-between p-4 px-6 md:px-10 bg-[#9dadb1] z-50 fixed top-0">
       <div
@@ -20,15 +31,19 @@ const Navbar = () => {
         />
       </div>
       <div className="relative flex items-center justify-end gap-2 text-white">
-        <div
-          onClick={() => router.push("/events")}
-          className="relative flex items-center gap-2 cursor-pointer animate-shake"
-        >
-          <FaBell size={20} />
-          <span className="absolute top-[-5px] right-[-5px] flex h-4 w-4 items-center justify-center rounded-full bg-red-600 text-xs text-white">
-            !
-          </span>
-        </div>
+        {loading ? (
+          <Spinner />
+        ) : (
+          <div
+            onClick={handleIconClick}
+            className="relative flex items-center gap-2 cursor-pointer animate-shake"
+          >
+            <FaBell size={20} />
+            <span className="absolute top-[-5px] right-[-5px] flex h-4 w-4 items-center justify-center rounded-full bg-red-600 text-xs text-white">
+              !
+            </span>
+          </div>
+        )}
       </div>
       <style jsx>{`
         @keyframes shake {
