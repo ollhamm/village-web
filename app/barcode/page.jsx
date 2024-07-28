@@ -43,7 +43,7 @@ export default function Home() {
       <button
         onClick={downloadQRCode}
         style={{
-          backgroundColor: "#9dc98a",
+          backgroundColor: "#9dadb1",
           marginTop: "20px",
           padding: "10px 20px",
           fontSize: "16px",
