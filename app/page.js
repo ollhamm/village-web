@@ -211,7 +211,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center gap-3 text-neutral-500 p-4 rounded flex-1 text-center">
               <Image
-                src={"/struktur/user-web.png"}
+                src={"/struktur/arya.png"}
                 height={400}
                 width={400}
                 alt="Sekretaris"
