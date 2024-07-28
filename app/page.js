@@ -146,7 +146,7 @@ export default function Home() {
             whileInView="visible"
             variants={fadeInFromLeft}
           >
-            Struktur organisasi
+            Struktur Organisasi
           </motion.div>
         </div>
         <div className="p-6 rounded-lg w-3/4">
@@ -248,7 +248,7 @@ export default function Home() {
             whileInView="visible"
             variants={fadeInFromLeft}
           >
-            Kegiatan terdekat
+            Kegiatan Terdekat
           </motion.div>
           <motion.div
             initial="hidden"
@@ -291,7 +291,7 @@ export default function Home() {
             whileInView="visible"
             variants={fadeInFromLeft}
           >
-            coming soon
+            Coming Soon
           </motion.div>
           <motion.div
             initial="hidden"
