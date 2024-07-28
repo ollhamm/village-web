@@ -22,9 +22,6 @@ const Card = ({ imgSrc, title, variants }) => (
     transition={{ duration: 0.5 }}
   >
     <Image src={imgSrc} alt={title} width={200} height={200} />
-    <div className="p-4">
-      <p className="text-gray-700 text-xs">{description}</p>
-    </div>
   </motion.div>
 );
 
