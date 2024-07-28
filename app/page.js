@@ -42,7 +42,7 @@ export default function Home() {
         <div className="md:text-3xl text-lg items-center justify-center font-bold text-neutral-500 mt-10">
           <Typewriter
             words={["Karang Taruna Wirabhakti Kliran X"]}
-            loop={0}
+            loop={Infinity}
             cursor
             cursorStyle="|"
             typeSpeed={50}
@@ -178,7 +178,7 @@ export default function Home() {
           >
             <div className="flex flex-col items-center gap-3 text-neutral-500 p-4 rounded flex-1 text-center">
               <Image
-                src={"/struktur/ketua.png"}
+                src={"/struktur/mhmdcrp.png"}
                 height={400}
                 width={400}
                 alt="wakil Ketua"
@@ -198,7 +198,7 @@ export default function Home() {
           >
             <div className="flex flex-col items-center gap-3 text-neutral-500 p-4 rounded flex-1 text-center">
               <Image
-                src={"/struktur/ketua.png"}
+                src={"/struktur/lpx.png"}
                 height={400}
                 width={400}
                 alt="Sekretaris"
@@ -211,7 +211,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center gap-3 text-neutral-500 p-4 rounded flex-1 text-center">
               <Image
-                src={"/struktur/ketua.png"}
+                src={"/struktur/user-web.png"}
                 height={400}
                 width={400}
                 alt="Sekretaris"
@@ -224,7 +224,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center gap-3 text-neutral-500 p-4 rounded flex-1 text-center">
               <Image
-                src={"/struktur/ketua.png"}
+                src={"/struktur/evi.png"}
                 height={400}
                 width={400}
                 alt="Bendahara"
