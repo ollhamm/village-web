@@ -13,7 +13,7 @@ const rightToLeftVariants = {
   visible: { opacity: 1, x: 0 },
 };
 
-const Card = ({ imgSrc, title, description, variants }) => (
+const Card = ({ imgSrc, title, variants }) => (
   <motion.div
     className="flex flex-col items-center rounded-lg shadow-lg p-4 md:w-1/4 m-2"
     initial="hidden"
@@ -33,19 +33,16 @@ const CardsContainer = () => (
     <Card
       imgSrc="/desa/lap-voli.png"
       title="Title 1"
-      description="This is the description for card 1."
       variants={leftToRightVariants}
     />
     <Card
       imgSrc="/desa/tirakatan.png"
       title="Title 2"
-      description="This is the description for card 2."
       variants={rightToLeftVariants}
     />
     <Card
       imgSrc="/desa/masjid.png"
       title="Title 2"
-      description="This is the description for card 2."
       variants={leftToRightVariants}
     />
   </div>
