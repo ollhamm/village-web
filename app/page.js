@@ -41,7 +41,7 @@ export default function Home() {
         </div>
         <div className="md:text-3xl text-lg items-center justify-center font-bold text-neutral-500 mt-10">
           <Typewriter
-            words={["Karang Taruna Wirabakti Kliran X"]}
+            words={["Karang Taruna Wirabhakti Kliran X"]}
             loop={0}
             cursor
             cursorStyle="|"
