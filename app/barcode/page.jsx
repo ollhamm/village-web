@@ -3,7 +3,7 @@ import QRCode from "qrcode.react";
 import { useRef } from "react";
 
 export default function Home() {
-  const qrValue = "https://karang-taruna-kertaaji.vercel.app/";
+  const qrValue = "https://karang-taruna-wirabhakti.vercel.app/";
   const qrRef = useRef();
 
   const downloadQRCode = () => {
