@@ -158,9 +158,9 @@ export default function Home() {
           >
             <div className="flex flex-col items-center text-neutral-500 gap-3 p-4 rounded flex-1 text-center">
               <Image
-                src={"/struktur/ketua.png"}
-                height={400}
-                width={400}
+                src={"/struktur/wahyu.png"}
+                height={500}
+                width={500}
                 alt="Ketua Karangtaruna"
                 className="w-48 h-48 rounded-full mb-2"
               />
