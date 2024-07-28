@@ -1,28 +1,6 @@
-"use client";
-import QRCode from "qrcode.react";
-
-export default function Home() {
-  const qrValue = "https://porto-me-nine.vercel.app/"; // Ganti dengan URL atau teks yang ingin Anda enkode dalam barcode
-
-  return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100vh",
-      }}
-    >
-      <h1>Scan this QR Code</h1>
-      <QRCode
-        value={qrValue}
-        size={256} // Ukuran QR Code dalam piksel
-        bgColor="#ffffff"
-        fgColor="#000000"
-        level="H" // Tingkat koreksi kesalahan
-        includeMargin={true}
-      />
-    </div>
-  );
-}
+<div className="flex mb-6 space-x-4">
+  <div className="flex flex-col items-center bg-[#9dadb1] text-white p-4 rounded flex-1 text-center">
+    <Image src={""} alt="Paling Atas" className="w-24 h-24 rounded-full mb-2" />
+    <div>Ketua Karangtaruna</div>
+  </div>
+</div>;
