@@ -255,7 +255,7 @@ export default function Home() {
           whileInView="visible"
           variants={fadeInFromLeft}
         >
-          Desa Kami
+          Dusun Kami
         </motion.div>
         <div className="flex flex-col md:flex-row md:px-20 items-center justify-center mt-10">
           <motion.div
