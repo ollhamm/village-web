@@ -13,36 +13,36 @@ const rightToLeftVariants = {
   visible: { opacity: 1, x: 0 },
 };
 
-const Card = ({ imgSrc, title, variants }) => (
+const ImageComponent = ({ imgSrc, variants }) => (
   <motion.div
-    className="flex flex-col items-center rounded-lg shadow-lg p-4 md:w-1/4 m-2"
+    className="relative w-64 h-80 m-2"
     initial="hidden"
     whileInView="visible"
     variants={variants}
     transition={{ duration: 0.5 }}
   >
-    <Image src={imgSrc} alt={title} width={200} height={200} />
+    <Image
+      src={imgSrc}
+      alt="Image"
+      layout="fill"
+      objectFit="cover"
+      className="rounded-lg"
+    />
   </motion.div>
 );
 
-const CardsContainer = () => (
+const ImagesContainer = () => (
   <div className="flex flex-col md:flex-row items-center justify-center flex-wrap">
-    <Card
+    <ImageComponent
       imgSrc="/desa/lap-voli.png"
-      title="Title 1"
       variants={leftToRightVariants}
     />
-    <Card
+    <ImageComponent
       imgSrc="/desa/tirakatan.png"
-      title="Title 2"
       variants={rightToLeftVariants}
     />
-    <Card
-      imgSrc="/desa/masjid.png"
-      title="Title 2"
-      variants={leftToRightVariants}
-    />
+    <ImageComponent imgSrc="/desa/kirab.png" variants={leftToRightVariants} />
   </div>
 );
 
-export default CardsContainer;
+export default ImagesContainer;

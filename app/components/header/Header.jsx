@@ -67,7 +67,7 @@ const Header = () => {
             <FaWhatsapp size={30} />
           </a>
           <a
-            href="/"
+            href="mailto:wirabhaktikliranx@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
