@@ -76,7 +76,7 @@ const ComingSoon = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Let's go <FaBell size={20} />
+              Let&apos;s go <FaBell size={20} />
             </motion.div>
           </div>
         </motion.div>
