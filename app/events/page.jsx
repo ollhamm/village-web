@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const Card = ({ imgSrc, onClick }) => (
-  <div className="relative w-48 h-48 m-2 cursor-pointer" onClick={onClick}>
+  <div className="relative w-48 h-60 m-2 cursor-pointer" onClick={onClick}>
     <Image
       src={imgSrc}
       alt="Poster"
@@ -37,7 +37,7 @@ const Events = () => {
   };
 
   return (
-    <div className="flex flex-col bg-slate-100 mt-20">
+    <div className="flex flex-col mt-20">
       <div className="flex flex-col items-center justify-center">
         <div>
           <Image
