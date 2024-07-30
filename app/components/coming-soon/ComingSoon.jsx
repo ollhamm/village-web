@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaBell } from "react-icons/fa";
 
 const ComingSoon = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -51,13 +52,11 @@ const ComingSoon = () => {
         >
           <div className="flex flex-col items-center justify-center">
             <motion.div
-              className="font-bold text-lg md:text-2xl mb-10 text-neutral-400 underline"
+              className="font-bold flex flex-row items-center justify-center text-lg md:text-2xl mb-10 text-neutral-400 underline"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-            >
-              Coming Soon
-            </motion.div>
+            ></motion.div>
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
@@ -72,12 +71,12 @@ const ComingSoon = () => {
               />
             </motion.div>
             <motion.div
-              className="flex flex-row px-8 md:px-48 text-xs md:text-sm rounded-xl shadow-lg p-6 items-center justify-center"
+              className="flex flex-row px-8 md:px-48 text-xl md:text-2xl font-semibold text-neutral-500 rounded-xl shadow-lg p-6 items-center justify-center"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              {/* Konten tambahan di sini */}
+              Let's go <FaBell size={20} />
             </motion.div>
           </div>
         </motion.div>
