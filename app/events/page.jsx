@@ -57,11 +57,11 @@ const Events = () => {
           />
         </div>
       </div>
-      <div className="flex flex-2 flex-col items-center justify-center h-screen">
-        <div className="font-bold text-lg md:text-2xl mb-10 text-neutral-400 underline">
+      <div className="flex flex-1 flex-col items-center justify-center h-screen">
+        <div className="font-bold text-lg md:text-2xl mb-10 mt-36 text-neutral-400 underline">
           Ayo Ikuti dan Meriahkan!
         </div>
-        <div className="flex flex-row items-center justify-center gap-4 flex-wrap">
+        <div className="flex flex-row items-center justify-center gap-4 flex-wrap mb-36">
           <Card
             imgSrc="/images/lomba2.png"
             onClick={() => handleCardClick("/images/lomba2.png")}
