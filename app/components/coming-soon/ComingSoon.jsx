@@ -7,8 +7,13 @@ import { FaBell } from "react-icons/fa";
 const ComingSoon = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [isAtBottom, setIsAtBottom] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
     const handleScroll = () => {
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
         setIsAtBottom(true);
@@ -17,9 +22,13 @@ const ComingSoon = () => {
       }
     };
 
+    window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
 
+    handleResize();
+
     return () => {
+      window.removeEventListener("resize", handleResize);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
@@ -32,12 +41,14 @@ const ComingSoon = () => {
 
   const containerVariants = {
     initial: { opacity: 1 },
-    hidden: {
-      opacity: 0,
-      x: ["0%", "3%", "-3%", "100%"],
-      y: ["0%", "-3%", "3%", "-100%"],
-      transition: { duration: 2 },
-    },
+    hidden: isMobile
+      ? { opacity: 0, transition: { duration: 1 } }
+      : {
+          opacity: 0,
+          x: ["0%", "3%", "-3%", "100%"],
+          y: ["0%", "-3%", "3%", "-100%"],
+          transition: { duration: 2 },
+        },
   };
 
   return (
